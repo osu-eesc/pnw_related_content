@@ -100,6 +100,7 @@ function pnw_related_content_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Social Media';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -123,6 +124,8 @@ function pnw_related_content_views_default_views() {
   $handler->display->display_options['fields']['field_social_media_type']['label'] = '';
   $handler->display->display_options['fields']['field_social_media_type']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_social_media_type']['alter']['text'] = '<div class="[field_social_media_type]"></div>';
+  $handler->display->display_options['fields']['field_social_media_type']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_social_media_type']['alter']['path'] = 'field_social_url]';
   $handler->display->display_options['fields']['field_social_media_type']['element_label_colon'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
@@ -169,6 +172,10 @@ function pnw_related_content_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'socialmedialink' => 'socialmedialink',
   );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'social_media_block');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $export['social_media_links'] = $view;
 
   return $export;
