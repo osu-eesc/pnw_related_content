@@ -31,11 +31,11 @@
     
 }
 
-#block-views-social_media_links-block_1 .views-field-nothing .Flickr {
+.views-field-field-social-media-type .Flickr {
   background-image: url('flickr.png');
 }
 
-#block-views-social_media_links-block_1 .views-field-nothing .Twitter {
+.views-field-field-social-media-type .Twitter {
   background-image: url('twitter.png');
 }
 
@@ -43,11 +43,31 @@
   background-image: url('wordpress.png');
 }
 
-#block-views-social_media_links-block_1 .views-field-nothing .YouTube {
+.views-field-field-social-media-type .YouTube {
   background-image: url('youtube.png');
 }
 
-#block-views-social_media_links-block_1 .views-field-nothing .Vimeo {
+.views-field-field-social-media-type .Vimeo {
   background-image: url('vimeo.png');
+}
+
+.views-field-field-social-media-type .Pinterest {
+  background-image: url('pinterest.png');
+}
+
+.views-field-field-social-media-type .Blogger {
+  background-image: url('blogger.png');
+}
+
+.views-field-field-social-media-type .GooglePlus {
+  background-image: url('googleplus.png');
+}
+
+.views-field-field-social-media-type .LinkedIn {
+  background-image: url('linkedin.png');
+}
+
+.views-field-field-social-media-type .Pachyderm {
+  background-image: url('pachyderm.png');
 }
 
