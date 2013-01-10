@@ -37,6 +37,13 @@ function pnw_related_content_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['edit_node']['text'] = 'edit';
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_related_link']['id'] = 'field_related_link';
   $handler->display->display_options['fields']['field_related_link']['table'] = 'field_data_field_related_link';
@@ -109,6 +116,13 @@ function pnw_related_content_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = '';
+  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['edit_node']['text'] = 'edit';
   /* Field: Content: Social Media Site */
   $handler->display->display_options['fields']['field_social_url']['id'] = 'field_social_url';
   $handler->display->display_options['fields']['field_social_url']['table'] = 'field_data_field_social_url';
@@ -136,13 +150,6 @@ function pnw_related_content_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['nothing']['alter']['path'] = '[field_social_url]';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Content: Edit link */
-  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['label'] = '';
-  $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['edit_node']['text'] = 'edit';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';

@@ -431,7 +431,7 @@ function pnw_related_content_field_default_fields() {
       'bundle' => 'relatedlink',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Select the page that this link should be attached to.',
+      'description' => 'Page that link is displayed on.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -723,7 +723,7 @@ function pnw_related_content_field_default_fields() {
   t('Enter a title and the full URL of the related link.');
   t('Image');
   t('Link');
-  t('Select the page that this link should be attached to.');
+  t('Page that link is displayed on.');
   t('Social Media Site');
   t('Social Media Type');
 
