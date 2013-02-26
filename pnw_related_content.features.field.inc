@@ -45,7 +45,7 @@ function pnw_related_content_field_default_fields() {
       'deleted' => '0',
       'description' => '',
       'display' => array(
-        'default' => array(
+        'colorbox_node' => array(
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
@@ -53,6 +53,20 @@ function pnw_related_content_field_default_fields() {
             'image_style' => 'image_on_page',
           ),
           'type' => 'image',
+          'weight' => '0',
+        ),
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'colorbox',
+          'settings' => array(
+            'colorbox_caption' => 'custom',
+            'colorbox_caption_custom' => '[node:field-image-description:caption-copyright][node:field-photo-copyright:caption-copyright]',
+            'colorbox_gallery' => 'page',
+            'colorbox_gallery_custom' => '',
+            'colorbox_image_style' => 'image-colorbox',
+            'colorbox_node_style' => '',
+          ),
+          'type' => 'colorbox',
           'weight' => '0',
         ),
         'full' => array(
@@ -84,6 +98,7 @@ function pnw_related_content_field_default_fields() {
           'weight' => '0',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_image',
       'label' => 'Image',
@@ -114,7 +129,7 @@ function pnw_related_content_field_default_fields() {
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -181,6 +196,13 @@ function pnw_related_content_field_default_fields() {
       'deleted' => '0',
       'description' => '',
       'display' => array(
+        'colorbox_node' => array(
+          'label' => 'above',
+          'module' => 'node_reference',
+          'settings' => array(),
+          'type' => 'node_reference_default',
+          'weight' => '3',
+        ),
         'default' => array(
           'label' => 'above',
           'module' => 'node_reference',
@@ -189,7 +211,7 @@ function pnw_related_content_field_default_fields() {
           'weight' => '3',
         ),
         'full' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'node_reference',
           'settings' => array(),
           'type' => 'node_reference_default',
@@ -263,6 +285,13 @@ function pnw_related_content_field_default_fields() {
       'deleted' => '0',
       'description' => 'Enter a caption for the image.',
       'display' => array(
+        'colorbox_node' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '1',
+        ),
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -285,6 +314,7 @@ function pnw_related_content_field_default_fields() {
           'weight' => '1',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_image_description',
       'label' => 'Caption',
@@ -340,6 +370,13 @@ function pnw_related_content_field_default_fields() {
       'deleted' => '0',
       'description' => '',
       'display' => array(
+        'colorbox_node' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '2',
+        ),
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -362,6 +399,7 @@ function pnw_related_content_field_default_fields() {
           'weight' => '2',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_photo_copyright',
       'label' => 'Copyright',

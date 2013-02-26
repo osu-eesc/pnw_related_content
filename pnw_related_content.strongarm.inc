@@ -43,6 +43,9 @@ function pnw_related_content_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'colorbox_node' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
