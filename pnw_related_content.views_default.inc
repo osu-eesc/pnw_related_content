@@ -323,6 +323,25 @@ function pnw_related_content_views_default_views() {
   $handler = $view->new_display('block', 'Related links', 'related_links');
   $handler->display->display_options['display_description'] = 'displays related links';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+
+  /* Display: Print Friendly related links */
+  $handler = $view->new_display('block', 'Print Friendly related links', 'print_related_links');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Print Related Links';
+  $handler->display->display_options['display_description'] = 'displays related links on print page';
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_related_link']['id'] = 'field_related_link';
+  $handler->display->display_options['fields']['field_related_link']['table'] = 'field_data_field_related_link';
+  $handler->display->display_options['fields']['field_related_link']['field'] = 'field_related_link';
+  $handler->display->display_options['fields']['field_related_link']['label'] = '';
+  $handler->display->display_options['fields']['field_related_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_related_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_related_link']['type'] = 'link_separate';
   $export['related_links'] = $view;
 
   $view = new view();

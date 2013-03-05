@@ -5,6 +5,7 @@ package = PNW
 php = 5.2.4
 version = 7.x-1.2
 project = pnw_related_content
+dependencies[] = auto_nodetitle
 dependencies[] = colorbox
 dependencies[] = eva
 dependencies[] = features
