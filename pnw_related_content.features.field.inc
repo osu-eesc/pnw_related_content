@@ -129,7 +129,7 @@ function pnw_related_content_field_default_fields() {
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 1,
+        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -283,7 +283,7 @@ function pnw_related_content_field_default_fields() {
       'bundle' => 'image',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Enter a caption for the image.',
+      'description' => '',
       'display' => array(
         'colorbox_node' => array(
           'label' => 'hidden',
@@ -327,7 +327,7 @@ function pnw_related_content_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '5',
+          'rows' => '3',
         ),
         'type' => 'text_textarea',
         'weight' => '2',
@@ -362,7 +362,7 @@ function pnw_related_content_field_default_fields() {
         'max_length' => '512',
       ),
       'translatable' => '0',
-      'type' => 'text',
+      'type' => 'text_long',
     ),
     'field_instance' => array(
       'bundle' => 'image',
@@ -412,9 +412,9 @@ function pnw_related_content_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'size' => '60',
+          'rows' => '3',
         ),
-        'type' => 'text_textfield',
+        'type' => 'text_textarea',
         'weight' => '3',
       ),
     ),
@@ -757,7 +757,6 @@ function pnw_related_content_field_default_fields() {
   t('Caption');
   t('Choose one of the Social Media types.');
   t('Copyright');
-  t('Enter a caption for the image.');
   t('Enter a title and the full URL of the related link.');
   t('Image');
   t('Link');

@@ -182,6 +182,7 @@ function pnw_related_content_strongarm() {
   $strongarm->name = 'node_options_image';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_image'] = $strongarm;
 
@@ -191,6 +192,7 @@ function pnw_related_content_strongarm() {
   $strongarm->name = 'node_options_relatedlink';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_relatedlink'] = $strongarm;
 
@@ -200,6 +202,7 @@ function pnw_related_content_strongarm() {
   $strongarm->name = 'node_options_socialmedialink';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_socialmedialink'] = $strongarm;
 

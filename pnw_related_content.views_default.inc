@@ -62,7 +62,6 @@ function pnw_related_content_views_default_views() {
   $handler->display->display_options['fields']['field_photo_copyright']['table'] = 'field_data_field_photo_copyright';
   $handler->display->display_options['fields']['field_photo_copyright']['field'] = 'field_photo_copyright';
   $handler->display->display_options['fields']['field_photo_copyright']['label'] = '';
-  $handler->display->display_options['fields']['field_photo_copyright']['element_class'] = 'copyright';
   $handler->display->display_options['fields']['field_photo_copyright']['element_label_colon'] = FALSE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
