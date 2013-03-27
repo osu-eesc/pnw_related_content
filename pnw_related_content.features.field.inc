@@ -320,6 +320,44 @@ function pnw_related_content_field_default_fields() {
       'label' => 'Caption',
       'required' => 0,
       'settings' => array(
+        'better_formats' => array(
+          'allowed_formats' => array(
+            'caption_copyright' => 'caption_copyright',
+            'ds_code' => 'ds_code',
+            'filtered_html' => 0,
+            'full_html' => 0,
+            'php_code' => 0,
+            'plain_text' => 0,
+            'styled_page_title' => 0,
+          ),
+          'allowed_formats_toggle' => 1,
+          'default_order_toggle' => 0,
+          'default_order_wrapper' => array(
+            'formats' => array(
+              'caption_copyright' => array(
+                'weight' => '-10',
+              ),
+              'ds_code' => array(
+                'weight' => '-5',
+              ),
+              'filtered_html' => array(
+                'weight' => '0',
+              ),
+              'full_html' => array(
+                'weight' => '-8',
+              ),
+              'php_code' => array(
+                'weight' => '-6',
+              ),
+              'plain_text' => array(
+                'weight' => '-7',
+              ),
+              'styled_page_title' => array(
+                'weight' => '-9',
+              ),
+            ),
+          ),
+        ),
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
@@ -405,6 +443,44 @@ function pnw_related_content_field_default_fields() {
       'label' => 'Copyright',
       'required' => 0,
       'settings' => array(
+        'better_formats' => array(
+          'allowed_formats' => array(
+            'caption_copyright' => 'caption_copyright',
+            'ds_code' => 0,
+            'filtered_html' => 0,
+            'full_html' => 0,
+            'php_code' => 0,
+            'plain_text' => 0,
+            'styled_page_title' => 0,
+          ),
+          'allowed_formats_toggle' => 1,
+          'default_order_toggle' => 0,
+          'default_order_wrapper' => array(
+            'formats' => array(
+              'caption_copyright' => array(
+                'weight' => '-10',
+              ),
+              'ds_code' => array(
+                'weight' => '-5',
+              ),
+              'filtered_html' => array(
+                'weight' => '0',
+              ),
+              'full_html' => array(
+                'weight' => '-8',
+              ),
+              'php_code' => array(
+                'weight' => '-6',
+              ),
+              'plain_text' => array(
+                'weight' => '-7',
+              ),
+              'styled_page_title' => array(
+                'weight' => '-9',
+              ),
+            ),
+          ),
+        ),
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
