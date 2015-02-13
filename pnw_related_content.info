@@ -2,7 +2,6 @@ name = PNW Related Content
 description = PNW related content content types
 core = 7.x
 package = PNW
-php = 5.2.4
 version = 7.x-1.2
 project = pnw_related_content
 dependencies[] = auto_nodetitle
